@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-menu {
+    width: 200px;
+    max-width: 200px;
+    min-width: 1%;
+}
+
+#header {
+    background-color: white !important;
+}
+
+.dropdown-menu li a {
+    font-size: 0.8em;
+    display: block;
+    white-space: initial;
+    overflow:visible;
+}
+
+.dropdown-menu li h6 {
+    font-size: 0.9em;
+    display: block;
+    white-space: initial;
+    overflow:visible;
+}
+
+#purple_title {
+    color: rgb(152,68,252);
+    font-weight: 700;
+    font-size:1.2em;
+    padding: 1vh;
+    border-bottom: 2px solid rgb(152,68,252);
+}
+
+
+form.d-flex {
+    margin: 0vh auto;
+}
+
+input.form-control {
+    background-color: #eff0f5;
+    width:350px;
+}
+
+#register {
+    background-color: rgb(152,68,252);
+    color: white;
+}
+
+
+#busqueda, #login{
+    background-color: #eff0f5;
+}
+
+#busqueda, #log, #dropdown_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 90vh;
+    background: #eff0f5;
+    transition: all .5s ease;
+}
+
+.streamers {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.streamers img.user_pic {
+    max-width: 30px;
+    max-height: 30px;
+}
+div.streamers img.live {
+    max-width: 8px;
+    max-height: 8px;
+    justify-self:flex-end;
+}
+
+.users_watching {
+    height: 1em;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+
+
+
+
+
+.sidebar {
+    transition: all .5s ease;
+}
+
+.sidebar header {
+  font-size: 18px;
+  line-height: 70px;
+  text-align: center;
+  user-select: none;
+  padding-bottom: 2vh;
+}
+
+.sidebar div.chanels div.streamers{
+  font-size: 1.1em;
+  box-sizing: border-box;
+  transition: .4s;
+  padding-bottom: 2vh;
+}
+
+div.chanels div.streamers:hover {
+  padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#check{
+    display: none;
+}
+
+label, label #btn, label #cancel{
+  position: absolute;
+  background: #eff0f5;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+label #btn{
+  left: 2vw; /*Posicion retraida*/
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  font-size: 30px;
+  color: #eff0f5;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 260px; /*Posicion del boton*/
+}
+
