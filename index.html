@@ -130,21 +130,67 @@
                     2500
                 </div>
             </div>
-
-
-
-
         </div>
     </section>
 
     <main id="main">
         <h1>Explorar</h1>
         <div class="iconos">
-            <div class="categorias">Juegos</div>
-            <div class="categorias">IRL</div>
-            <div class="categorias">Música</div>
-            <div class="categorias">Esports</div>
-            <div class="categorias">Creative</div>
+            <div class="categorias">
+                Juegos
+                <img src="./images/icono_1.svg" alt="icono 1">
+            </div>
+            <div class="categorias">
+                IRL
+                <img src="./images/icono_2.svg" alt="icono 2">
+            </div>
+            <div class="categorias">
+                Música
+                <img src="./images/icono_3.svg" alt="icono 3">
+            </div>
+            <div class="categorias">
+                Esports
+                <img src="./images/icono_4.svg" alt="icono 4">
+            </div>
+            <div class="categorias">
+                Creative
+                <img src="./images/icono_5.svg" alt="icono 5">
+            </div>
+        </div>
+        <div class="tabs">
+            <p class="tab" id="actual_tab">Categorías</p>
+            <p class="tab">Canales en directo</p>
+        </div>
+        <div class="utilidades">
+            <div id="barra_de_busqueda">
+                Filtrar por 
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn busqueda" type="submit"><img src="./images/search.png" alt="lupa"></button>
+                  </form>
+            </div>
+            <div id="ordenamiento">
+                Ordenar por 
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Recomendado para ti
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Recomendado para ti</a></li>
+                      <li><a class="dropdown-item" href="#">Espectadores (descend.)</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="videojuegos">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">319.819 espectadores</p>
+                  <p class="card-text">IRL</p>
+                </div>
+              </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

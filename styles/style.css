@@ -1,15 +1,15 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
 *{
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
 }
-/*
+
 body {
     font-family: 'Roboto', sans-serif;
 }
-*/
+
 .dropdown-menu {
     width: 200px;
     max-width: 200px;
@@ -68,23 +68,11 @@ input.form-control {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .sidebar {
     position: fixed;
     left: -250px;
     width: 250px;
-    height: 90vh;
+    height: 100vh;
     background: #eff0f5;
     transition: all .5s ease;
 }
@@ -114,17 +102,13 @@ div.streamers img.live {
     align-items: center;
 }
 
-
-
-
-
-
 .sidebar {
     transition: all .5s ease;
 }
 
 .sidebar header {
-  font-size: 18px;
+  font-size: 1.15em;
+  font-weight: 700;
   line-height: 70px;
   text-align: center;
   user-select: none;
@@ -141,18 +125,6 @@ div.streamers img.live {
 div.chanels div.streamers:hover {
   padding-left: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #check{
     display: none;
@@ -202,20 +174,68 @@ main{
 }
 
 .iconos{
+    margin-top: 5vh;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /*border: 1px solid red;*/
 }
 
 .categorias {
+    font-size: 1.3em;
+    font-weight: 700;
     background-color: #772ce8;
     color: white;
-    width: 200px;
+    width: 225px;
     min-width: 150px;
     height: 40px;
     min-height: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.tabs {
+    margin: 3vh 0vw 0vh 5vh;
+    display: flex;
+    align-items: center;
+    gap: 1vw;  
+}
+
+.tab {
+    width: fit-content;
+    font-weight: 700;
+    font-size:1.2em;
+    padding: 1vh;
+}
+
+#actual_tab {
+    width: fit-content;
+    color: rgb(152,68,252);
+    border-bottom: 2px solid rgb(152,68,252);
+}
+
+.utilidades, #barra_de_busqueda, #ordenamiento {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.utilidades {
+    min-width: 100%;
+    justify-content: space-between;
+    padding: 0vh 2vw;
+}
+
+#barra_de_busqueda, #ordenamiento {
+    height: fit-content;
+    gap: 1vw;
+    align-items: center;
+}
+
+.busqueda {
+    background-color: #eff0f5 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
