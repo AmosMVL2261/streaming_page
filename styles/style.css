@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+/*Header creado con bootstrap*/
 .dropdown-menu {
     width: 200px;
     max-width: 200px;
@@ -20,6 +20,7 @@ body {
     background-color: white !important;
 }
 
+/*Configuraciones del menu dropdown del header*/
 .dropdown-menu li a {
     font-size: 0.8em;
     display: block;
@@ -34,6 +35,7 @@ body {
     overflow:visible;
 }
 
+/*Boton de la pestaña actual del header*/
 #purple_title {
     color: rgb(152,68,252);
     font-weight: 700;
@@ -43,6 +45,7 @@ body {
 }
 
 
+/*Configuraciones de la barra de busqueda del header*/
 form.d-flex {
     margin: 0vh auto;
 }
@@ -52,11 +55,11 @@ input.form-control {
     width:350px;
 }
 
+/*botones del header*/
 #register {
     background-color: rgb(152,68,252);
     color: white;
 }
-
 
 #busqueda, #login{
     background-color: #eff0f5;
@@ -67,12 +70,12 @@ input.form-control {
     justify-content: center;
     align-items: center;
 }
-
+/*Barra lateral*/
 .sidebar {
     position: fixed;
     left: -250px;
     width: 250px;
-    height: 100vh;
+    height:100vh;
     background: #eff0f5;
     transition: all .5s ease;
 }
@@ -165,10 +168,11 @@ label #cancel{
   left: 260px; /*Posicion del boton*/
 }
 
+/*Configuraciones de todo lo principal de la pagina (main)*/
+
 main{
     display: flex;
     flex-flow: column nowrap;
-    /*border: 1px solid red;*/
     padding: 20px 0px 0px 15px;
     transition: all .5s;
 }
@@ -178,9 +182,9 @@ main{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    /*border: 1px solid red;*/
 }
 
+/*Letreros de las categorias*/
 .categorias {
     font-size: 1.3em;
     font-weight: 700;
@@ -194,6 +198,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/*En caso de necesitar un wrap se da el espacio necesario*/
+.iconos > div {
+    margin: 10px 0px;
 }
 
 .tabs {
@@ -215,7 +224,7 @@ main{
     color: rgb(152,68,252);
     border-bottom: 2px solid rgb(152,68,252);
 }
-
+/*Utilidades no funcionales de busqueda de contenido*/
 .utilidades, #barra_de_busqueda, #ordenamiento {
     display: flex;
     flex-flow: row wrap;
@@ -225,6 +234,10 @@ main{
     min-width: 100%;
     justify-content: space-between;
     padding: 0vh 2vw;
+}
+
+.utilidades > div {
+    margin: 10px 0px;
 }
 
 #barra_de_busqueda, #ordenamiento {
@@ -239,3 +252,51 @@ main{
     justify-content: center;
     align-items: center;  
 }
+
+/*Configuraciones para las tarjetas de los juegos*/
+img.card-img-top  {
+    width: 189px;
+    height: 255px;
+}
+
+div.videojuegos {
+    padding: 3vh 1vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;  
+}
+
+div.videojuegos > div {
+    margin: 10px;
+}
+
+.card-text.categoria{
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: #eff0f5;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    li.dropdown {
+        align-self: flex-start;
+    }
+    #busqueda_principal{
+        width: fit-content;
+    }
+    #botones_header{
+        width: fit-content;
+        align-self: center;
+    }
+    input.form-control{
+        width:250px;
+    }
+    input.form-control#busquedaDeJuegos {
+        width:150px;
+    }
+}
+
+
+
